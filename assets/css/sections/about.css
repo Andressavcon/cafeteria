@@ -1,0 +1,27 @@
+.about {
+  align-items: center;
+  height: 50rem;
+}
+
+.about-icons {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2rem;
+  transition: 0.3s ease-in-out;
+}
+
+.about-icons a:hover {
+  scale: 1.05;
+}
+
+@media screen and (max-width: 1200px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .about-icons {
+    font-size: 1rem;
+    padding-top: 0.5em;
+  }
+}

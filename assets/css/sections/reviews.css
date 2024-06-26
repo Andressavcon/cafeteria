@@ -1,0 +1,54 @@
+.reviews {
+  padding: 5rem 0 10rem;
+}
+
+.reviews-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.review {
+  background-color: var(--background2);
+  border-radius: 0.8rem;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  transition: 0.5s ease-in-out;
+}
+
+.review:hover {
+  scale: 1.05;
+}
+
+.review-client {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.review-client-img {
+  background-color: var(--primary);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 1px solid var(--text);
+}
+
+@media screen and (max-width: 1200px) {
+  .reviews-list {
+    grid-template-columns: 1fr;
+  }
+
+  .review {
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+  }
+}

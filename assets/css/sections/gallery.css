@@ -1,0 +1,49 @@
+.gallery {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-images {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.gallery-images-item {
+  flex: 0 0 20%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.gallery-images-item img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: block;
+}
+
+.prev-button i,
+.next-button i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0.8;
+}
+
+.prev-button i {
+  left: 10px;
+}
+
+.next-button i {
+  right: 10px;
+}
+
+.prev-button i:hover,
+.next-button i:hover {
+  opacity: 1;
+}

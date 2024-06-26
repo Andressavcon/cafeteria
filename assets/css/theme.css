@@ -1,0 +1,17 @@
+.theme-container {
+  --text: var(--text-dark);
+  --background: var(--background-dark);
+  --background2: var(--background-dark2);
+  --primary: var(--primary-dark);
+  --secondary: var(--secondary-dark);
+  --accent: var(--accent-dark);
+}
+
+input.checkbox:not(:checked) ~ .theme-container {
+  --text: var(--text-light);
+  --background: var(--background-light);
+  --background2: var(--background-light2);
+  --primary: var(--primary-light);
+  --secondary: var(--secondary-light);
+  --accent: var(--accent-light);
+}

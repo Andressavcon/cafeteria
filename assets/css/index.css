@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Text%20Me%20One:700|Text%20Me%20One:400');
+@import url(./variables.css);
+@import url(./reset.css);
+@import url(./theme.css);
+@import url(./sections/about.css);
+@import url(./sections/reviews.css);
+@import url(./sections/contact.css);
+@import url(./sections/footer.css);
+@import url(./sections/gallery.css);
+@import url(./sections/header.css);
+@import url(./sections/hero.css);
+@import url(./sections/menu.css);
+
+body {
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+  width: 6rem;
+
+  margin: 1rem auto;
+  background-color: var(--accent);
+  color: var(--text);
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  transition: 0.3s ease-in-out;
+  opacity: 0.8;
+  font-weight: 700;
+}
+
+button:hover {
+  opacity: 1;
+  scale: 1.05;
+}
+
+a {
+  color: var(--primary);
+  font-weight: bold;
+  text-decoration: none;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+input,
+textarea {
+  border: none;
+  background-color: var(--background2);
+  border-radius: 0.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.theme-container .container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.theme-container .title,
+.theme-container .title2 {
+  color: var(--primary);
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.theme-container .title2 {
+  margin: 4rem 0;
+}
+
+.checkbox:not(:checked) + .theme-container .theme-toggle .fa-sun,
+.checkbox:checked + .theme-container .theme-toggle .fa-moon,
+.checkbox:not(:checked) + .theme-container .logo-white,
+.checkbox:checked + .theme-container .logo-black {
+  display: none;
+}
+
+.logo-white,
+.logo-black {
+  width: 7rem;
+}
+
+.header,
+.main,
+.footer {
+  color: var(--text);
+  background: var(--background);
+}
+
+.theme-toggle i {
+  font-size: 1.2rem;
+}
+
+.about,
+.contact {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  justify-items: center;
+
+  gap: 2rem;
+}
+
+.about-content,
+.contact-content,
+.contact-content form {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.about-image {
+  background-image: url(../images/about.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.2rem;
+}
+
+.contact-image {
+  background-image: url(../images/contact.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.2rem;
+}
+
+.expresso-img {
+  background-image: url('../images/expresso.jpg');
+}
+
+.latte-img {
+  background-image: url('../images/latte.jpg');
+}
+
+.cappuccino-img {
+  background-image: url('../images/cappuccino.jpg');
+}
+
+.mocha-img {
+  background-image: url('../images/mocha.jpg');
+}
+
+.affogato-img {
+  background-image: url('../images/affogato.jpg');
+}
+
+.macchiato-img {
+  background-image: url('../images/macchiato.jpg');
+}
+
+.client1-img {
+  background-image: url('../images/client-1.jpg');
+}
+
+.client2-img {
+  background-image: url('../images/client-2.jpg');
+}
+
+.client3-img {
+  background-image: url('../images/client-3.jpg');
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  background: none;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--background);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 2.369rem;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  font-size: 2.369rem;
+  opacity: 0.5;
+  z-index: 2;
+  transition: 0.3s ease-in-out;
+}
+
+.arrow:hover {
+  opacity: 1;
+  scale: 1.1;
+}
+
+@media screen and (max-width: 1200px) {
+  .theme-container .title,
+  .theme-container .title2 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .about,
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image img,
+  .contact-image img {
+    height: 7rem;
+    object-fit: cover;
+  }
+}

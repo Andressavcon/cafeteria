@@ -1,0 +1,17 @@
+:root {
+  --text-light: rgb(16, 13, 17);
+  --background-light: rgb(240, 235, 240);
+  --background-light2: rgba(81, 62, 81, 0.2);
+  --background-light3: rgba(240, 235, 240, 0.9);
+  --primary-light: rgb(81, 62, 81);
+  --secondary-light: rgb(177, 157, 154);
+  --accent-light: rgb(144, 130, 111);
+
+  --text-dark: rgb(241, 238, 242);
+  --background-dark: rgb(20, 15, 20);
+  --background-dark2: rgba(193, 174, 193, 0.2);
+  --background-dark3: rgba(20, 15, 20, 0.9);
+  --primary-dark: rgb(193, 174, 193);
+  --secondary-dark: rgb(101, 81, 78);
+  --accent-dark: rgb(144, 130, 111);
+}

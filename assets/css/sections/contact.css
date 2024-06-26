@@ -1,0 +1,27 @@
+.contact {
+  height: 50rem;
+}
+
+.contact-content {
+  width: 100%;
+}
+
+.contact-content input,
+.contact-content textarea {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  color: var(--text);
+}
+
+.contact-content textarea {
+  min-height: 3rem;
+  max-height: 10rem;
+}
+
+.contact-content label {
+  text-align: start;
+}
+
+.contact-content button {
+  margin-top: 2rem;
+}

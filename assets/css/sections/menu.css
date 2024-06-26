@@ -19,6 +19,7 @@
   height: 100%;
   background-image: url('../../images/menu.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   filter: brightness(20%);

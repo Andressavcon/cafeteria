@@ -2,6 +2,9 @@
 
 Este projeto consiste em uma página web para uma cafeteria artesanal, desenvolvida em aula utilizando somente os conteúdos do Módulo 3, da Formação Dev Full Stack Junior da [+prati](https://www.maisprati.com.br/) e [codifica](https://www.codificaedu.com.br/).
 
+[Link aplicação](https://andressavcon.github.io/cafeteria/)
+
+
 ## Tecnologias Utilizadas
 
 - HTML
